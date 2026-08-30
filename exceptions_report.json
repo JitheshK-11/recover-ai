@@ -1,0 +1,359 @@
+[
+    {
+        "txn_id": null,
+        "failure_code": "insufficient_funds",
+        "action_taken": "QUARANTINE_DATA",
+        "bucket": "Pending Customer/Human Action",
+        "reason": "Missing Transaction ID."
+    },
+    {
+        "txn_id": "txn_1001",
+        "failure_code": "do_not_honor",
+        "action_taken": "QUARANTINE_DATA",
+        "bucket": "Pending Customer/Human Action",
+        "reason": "Malformed or negative MRR value."
+    },
+    {
+        "txn_id": "txn_1002",
+        "failure_code": "network_timeout",
+        "action_taken": "QUARANTINE_DATA",
+        "bucket": "Pending Customer/Human Action",
+        "reason": "Malformed or negative MRR value."
+    },
+    {
+        "txn_id": "txn_1004",
+        "failure_code": "suspected_fraud",
+        "action_taken": "BLOCK_ACCOUNT",
+        "bucket": "Confirmed Unrecoverable",
+        "reason": "Terminal failure code 'suspected_fraud' cannot be resolved via retry."
+    },
+    {
+        "txn_id": "txn_1009",
+        "failure_code": "insufficient_funds",
+        "action_taken": "ESCALATE",
+        "bucket": "Failed First Attempt / Needs Follow-up",
+        "reason": "Max retry limit reached (9 attempts). Halting to prevent gateway fees."
+    },
+    {
+        "txn_id": "txn_1010",
+        "failure_code": "insufficient_funds",
+        "action_taken": "ESCALATE_TO_COLLECTIONS",
+        "bucket": "Confirmed Unrecoverable",
+        "reason": "Customer lapsed on promise-to-pay date (2026-08-29). Automatic escalation triggered."
+    },
+    {
+        "txn_id": "txn_1012",
+        "failure_code": "suspected_fraud",
+        "action_taken": "BLOCK_ACCOUNT",
+        "bucket": "Confirmed Unrecoverable",
+        "reason": "Terminal failure code 'suspected_fraud' cannot be resolved via retry."
+    },
+    {
+        "txn_id": "txn_1013",
+        "failure_code": "expired_card",
+        "action_taken": "NOTIFY_CUSTOMER",
+        "bucket": "Pending Customer/Human Action",
+        "reason": "Terminal failure code 'expired_card' cannot be resolved via retry."
+    },
+    {
+        "txn_id": "txn_1015",
+        "failure_code": "suspected_fraud",
+        "action_taken": "ESCALATE",
+        "bucket": "Failed First Attempt / Needs Follow-up",
+        "reason": "Max retry limit reached (3 attempts). Halting to prevent gateway fees."
+    },
+    {
+        "txn_id": "txn_1016",
+        "failure_code": "suspected_fraud",
+        "action_taken": "BLOCK_ACCOUNT",
+        "bucket": "Confirmed Unrecoverable",
+        "reason": "Terminal failure code 'suspected_fraud' cannot be resolved via retry."
+    },
+    {
+        "txn_id": "txn_1019",
+        "failure_code": "network_timeout",
+        "action_taken": "RETRY_IMMEDIATE",
+        "bucket": "Failed First Attempt / Needs Follow-up",
+        "reason": "Immediate technical retry failed on payment gateway."
+    },
+    {
+        "txn_id": "txn_1020",
+        "failure_code": "insufficient_funds",
+        "action_taken": "ESCALATE_TO_COLLECTIONS",
+        "bucket": "Confirmed Unrecoverable",
+        "reason": "Customer lapsed on promise-to-pay date (2026-08-28). Automatic escalation triggered."
+    },
+    {
+        "txn_id": "txn_1021",
+        "failure_code": "network_timeout",
+        "action_taken": "ESCALATE",
+        "bucket": "Failed First Attempt / Needs Follow-up",
+        "reason": "Max retry limit reached (3 attempts). Halting to prevent gateway fees."
+    },
+    {
+        "txn_id": "txn_1022",
+        "failure_code": "insufficient_funds",
+        "action_taken": "MANUAL_REVIEW",
+        "bucket": "Pending Customer/Human Action",
+        "reason": "Missing critical customer metadata required for dunning strategy."
+    },
+    {
+        "txn_id": "txn_1023",
+        "failure_code": "insufficient_funds",
+        "action_taken": "MANUAL_REVIEW",
+        "bucket": "Pending Customer/Human Action",
+        "reason": "Missing critical customer metadata required for dunning strategy."
+    },
+    {
+        "txn_id": "txn_1024",
+        "failure_code": "insufficient_funds",
+        "action_taken": "ESCALATE",
+        "bucket": "Failed First Attempt / Needs Follow-up",
+        "reason": "Max retry limit reached (3 attempts). Halting to prevent gateway fees."
+    },
+    {
+        "txn_id": "txn_1027",
+        "failure_code": "expired_card",
+        "action_taken": "ESCALATE",
+        "bucket": "Failed First Attempt / Needs Follow-up",
+        "reason": "Max retry limit reached (7 attempts). Halting to prevent gateway fees."
+    },
+    {
+        "txn_id": "txn_1030",
+        "failure_code": "expired_card",
+        "action_taken": "ESCALATE",
+        "bucket": "Failed First Attempt / Needs Follow-up",
+        "reason": "Max retry limit reached (3 attempts). Halting to prevent gateway fees."
+    },
+    {
+        "txn_id": "txn_1031",
+        "failure_code": "do_not_honor",
+        "action_taken": "ESCALATE",
+        "bucket": "Failed First Attempt / Needs Follow-up",
+        "reason": "Max retry limit reached (3 attempts). Halting to prevent gateway fees."
+    },
+    {
+        "txn_id": "txn_1034",
+        "failure_code": "suspected_fraud",
+        "action_taken": "BLOCK_ACCOUNT",
+        "bucket": "Confirmed Unrecoverable",
+        "reason": "Terminal failure code 'suspected_fraud' cannot be resolved via retry."
+    },
+    {
+        "txn_id": "txn_1035",
+        "failure_code": "insufficient_funds",
+        "action_taken": "MANUAL_REVIEW",
+        "bucket": "Pending Customer/Human Action",
+        "reason": "Missing critical customer metadata required for dunning strategy."
+    },
+    {
+        "txn_id": "txn_1036",
+        "failure_code": "suspected_fraud",
+        "action_taken": "BLOCK_ACCOUNT",
+        "bucket": "Confirmed Unrecoverable",
+        "reason": "Terminal failure code 'suspected_fraud' cannot be resolved via retry."
+    },
+    {
+        "txn_id": "txn_1038",
+        "failure_code": "expired_card",
+        "action_taken": "NOTIFY_CUSTOMER",
+        "bucket": "Pending Customer/Human Action",
+        "reason": "Terminal failure code 'expired_card' cannot be resolved via retry."
+    },
+    {
+        "txn_id": "txn_1039",
+        "failure_code": "suspected_fraud",
+        "action_taken": "ESCALATE",
+        "bucket": "Failed First Attempt / Needs Follow-up",
+        "reason": "Max retry limit reached (3 attempts). Halting to prevent gateway fees."
+    },
+    {
+        "txn_id": "txn_1040",
+        "failure_code": "suspected_fraud",
+        "action_taken": "ESCALATE",
+        "bucket": "Failed First Attempt / Needs Follow-up",
+        "reason": "Max retry limit reached (3 attempts). Halting to prevent gateway fees."
+    },
+    {
+        "txn_id": "txn_1041",
+        "failure_code": "suspected_fraud",
+        "action_taken": "BLOCK_ACCOUNT",
+        "bucket": "Confirmed Unrecoverable",
+        "reason": "Terminal failure code 'suspected_fraud' cannot be resolved via retry."
+    },
+    {
+        "txn_id": "txn_1043",
+        "failure_code": "network_timeout",
+        "action_taken": "ESCALATE",
+        "bucket": "Failed First Attempt / Needs Follow-up",
+        "reason": "Max retry limit reached (3 attempts). Halting to prevent gateway fees."
+    },
+    {
+        "txn_id": "txn_1045",
+        "failure_code": "do_not_honor",
+        "action_taken": "ESCALATE",
+        "bucket": "Failed First Attempt / Needs Follow-up",
+        "reason": "Max retry limit reached (7 attempts). Halting to prevent gateway fees."
+    },
+    {
+        "txn_id": "txn_1046",
+        "failure_code": "expired_card",
+        "action_taken": "ESCALATE_TO_COLLECTIONS",
+        "bucket": "Confirmed Unrecoverable",
+        "reason": "Customer lapsed on promise-to-pay date (2026-08-29). Automatic escalation triggered."
+    },
+    {
+        "txn_id": "txn_1047",
+        "failure_code": "do_not_honor",
+        "action_taken": "QUARANTINE_DATA",
+        "bucket": "Pending Customer/Human Action",
+        "reason": "Duplicate transaction detected (txn_1047). Quarantined to prevent MRR double-counting."
+    },
+    {
+        "txn_id": "txn_1049",
+        "failure_code": "network_timeout",
+        "action_taken": "ESCALATE",
+        "bucket": "Failed First Attempt / Needs Follow-up",
+        "reason": "Max retry limit reached (3 attempts). Halting to prevent gateway fees."
+    },
+    {
+        "txn_id": "txn_1050",
+        "failure_code": "insufficient_funds",
+        "action_taken": "ESCALATE",
+        "bucket": "Failed First Attempt / Needs Follow-up",
+        "reason": "Max retry limit reached (3 attempts). Halting to prevent gateway fees."
+    },
+    {
+        "txn_id": "txn_1052",
+        "failure_code": "network_timeout",
+        "action_taken": "ESCALATE_TO_COLLECTIONS",
+        "bucket": "Confirmed Unrecoverable",
+        "reason": "Customer lapsed on promise-to-pay date (2026-08-28). Automatic escalation triggered."
+    },
+    {
+        "txn_id": "txn_1053",
+        "failure_code": "suspected_fraud",
+        "action_taken": "BLOCK_ACCOUNT",
+        "bucket": "Confirmed Unrecoverable",
+        "reason": "Terminal failure code 'suspected_fraud' cannot be resolved via retry."
+    },
+    {
+        "txn_id": "txn_1055",
+        "failure_code": "suspected_fraud",
+        "action_taken": "BLOCK_ACCOUNT",
+        "bucket": "Confirmed Unrecoverable",
+        "reason": "Terminal failure code 'suspected_fraud' cannot be resolved via retry."
+    },
+    {
+        "txn_id": "txn_1056",
+        "failure_code": "insufficient_funds",
+        "action_taken": "MANUAL_REVIEW",
+        "bucket": "Pending Customer/Human Action",
+        "reason": "Missing critical customer metadata required for dunning strategy."
+    },
+    {
+        "txn_id": "txn_1057",
+        "failure_code": "network_timeout",
+        "action_taken": "ESCALATE",
+        "bucket": "Failed First Attempt / Needs Follow-up",
+        "reason": "Max retry limit reached (3 attempts). Halting to prevent gateway fees."
+    },
+    {
+        "txn_id": "txn_1059",
+        "failure_code": "expired_card",
+        "action_taken": "ESCALATE",
+        "bucket": "Failed First Attempt / Needs Follow-up",
+        "reason": "Max retry limit reached (5 attempts). Halting to prevent gateway fees."
+    },
+    {
+        "txn_id": "txn_1060",
+        "failure_code": "suspected_fraud",
+        "action_taken": "BLOCK_ACCOUNT",
+        "bucket": "Confirmed Unrecoverable",
+        "reason": "Terminal failure code 'suspected_fraud' cannot be resolved via retry."
+    },
+    {
+        "txn_id": "txn_1061",
+        "failure_code": "suspected_fraud",
+        "action_taken": "ESCALATE",
+        "bucket": "Failed First Attempt / Needs Follow-up",
+        "reason": "Max retry limit reached (3 attempts). Halting to prevent gateway fees."
+    },
+    {
+        "txn_id": "txn_1062",
+        "failure_code": "do_not_honor",
+        "action_taken": "ESCALATE",
+        "bucket": "Failed First Attempt / Needs Follow-up",
+        "reason": "Max retry limit reached (3 attempts). Halting to prevent gateway fees."
+    },
+    {
+        "txn_id": "txn_1063",
+        "failure_code": "suspected_fraud",
+        "action_taken": "BLOCK_ACCOUNT",
+        "bucket": "Confirmed Unrecoverable",
+        "reason": "Terminal failure code 'suspected_fraud' cannot be resolved via retry."
+    },
+    {
+        "txn_id": "txn_1064",
+        "failure_code": "network_timeout",
+        "action_taken": "ESCALATE",
+        "bucket": "Failed First Attempt / Needs Follow-up",
+        "reason": "Max retry limit reached (5 attempts). Halting to prevent gateway fees."
+    },
+    {
+        "txn_id": "txn_1064",
+        "failure_code": "suspected_fraud",
+        "action_taken": "QUARANTINE_DATA",
+        "bucket": "Pending Customer/Human Action",
+        "reason": "Duplicate transaction detected (txn_1064). Quarantined to prevent MRR double-counting."
+    },
+    {
+        "txn_id": "txn_1066",
+        "failure_code": "do_not_honor",
+        "action_taken": "MANUAL_REVIEW",
+        "bucket": "Pending Customer/Human Action",
+        "reason": "Missing critical customer metadata required for dunning strategy."
+    },
+    {
+        "txn_id": "txn_1067",
+        "failure_code": "do_not_honor",
+        "action_taken": "MANUAL_REVIEW",
+        "bucket": "Pending Customer/Human Action",
+        "reason": "Missing critical customer metadata required for dunning strategy."
+    },
+    {
+        "txn_id": "txn_1068",
+        "failure_code": "suspected_fraud",
+        "action_taken": "ESCALATE",
+        "bucket": "Failed First Attempt / Needs Follow-up",
+        "reason": "Max retry limit reached (3 attempts). Halting to prevent gateway fees."
+    },
+    {
+        "txn_id": "txn_1070",
+        "failure_code": "expired_card",
+        "action_taken": "ESCALATE_TO_COLLECTIONS",
+        "bucket": "Confirmed Unrecoverable",
+        "reason": "Customer lapsed on promise-to-pay date (2026-08-29). Automatic escalation triggered."
+    },
+    {
+        "txn_id": "txn_1072",
+        "failure_code": "expired_card",
+        "action_taken": "NOTIFY_CUSTOMER",
+        "bucket": "Pending Customer/Human Action",
+        "reason": "Terminal failure code 'expired_card' cannot be resolved via retry."
+    },
+    {
+        "txn_id": "txn_1073",
+        "failure_code": "suspected_fraud",
+        "action_taken": "ESCALATE_TO_COLLECTIONS",
+        "bucket": "Confirmed Unrecoverable",
+        "reason": "Customer lapsed on promise-to-pay date (2026-08-29). Automatic escalation triggered."
+    },
+    {
+        "txn_id": "txn_1074",
+        "failure_code": "insufficient_funds",
+        "action_taken": "ESCALATE",
+        "bucket": "Failed First Attempt / Needs Follow-up",
+        "reason": "Max retry limit reached (3 attempts). Halting to prevent gateway fees."
+    }
+]

@@ -1,0 +1,76 @@
+txn_id,mrr_value,handler,diagnosis,action,confidence_score,reasoning,actual_outcome
+,38.37,RULES_ENGINE,Deterministic Rule Matched,QUARANTINE_DATA,,Missing Transaction ID.,N/A
+txn_1001,-150.0,RULES_ENGINE,Deterministic Rule Matched,QUARANTINE_DATA,,Malformed or negative MRR value.,N/A
+txn_1002,0.0,RULES_ENGINE,Deterministic Rule Matched,QUARANTINE_DATA,,Malformed or negative MRR value.,N/A
+txn_1003,155.03,LLM_AGENT,Failed to parse LLM output,AGENT_FAILURE,0.0,"Agent execution failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}",FAILED
+txn_1004,280.34,RULES_ENGINE,Deterministic Rule Matched,BLOCK_ACCOUNT,,Terminal failure code 'suspected_fraud' cannot be resolved via retry.,N/A
+txn_1005,255.43,LLM_AGENT,Failed to parse LLM output,AGENT_FAILURE,0.0,"Agent execution failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}",FAILED
+txn_1006,68.62,RULES_ENGINE,Deterministic Rule Matched,PAUSE_WORKFLOW,,Active promise-to-pay on file for 2026-08-31. Suppressing retries to respect arrangement.,N/A
+txn_1007,116.79,RULES_ENGINE,Deterministic Rule Matched,RETRY_IMMEDIATE,,Transient network error. Safe to retry immediately.,RECOVERED
+txn_1008,161.98,LLM_AGENT,Failed to parse LLM output,AGENT_FAILURE,0.0,"Agent execution failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}",FAILED
+txn_1009,379.66,RULES_ENGINE,Deterministic Rule Matched,ESCALATE,,Max retry limit reached (9 attempts). Halting to prevent gateway fees.,N/A
+txn_1010,404.22,RULES_ENGINE,Deterministic Rule Matched,ESCALATE_TO_COLLECTIONS,,Customer lapsed on promise-to-pay date (2026-08-29). Automatic escalation triggered.,N/A
+txn_1011,179.57,LLM_AGENT,Failed to parse LLM output,AGENT_FAILURE,0.0,"Agent execution failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}",FAILED
+txn_1012,147.43,RULES_ENGINE,Deterministic Rule Matched,BLOCK_ACCOUNT,,Terminal failure code 'suspected_fraud' cannot be resolved via retry.,N/A
+txn_1013,430.6,RULES_ENGINE,Deterministic Rule Matched,NOTIFY_CUSTOMER,,Terminal failure code 'expired_card' cannot be resolved via retry.,N/A
+txn_1014,343.98,LLM_AGENT,Failed to parse LLM output,AGENT_FAILURE,0.0,"Agent execution failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}",FAILED
+txn_1015,133.02,RULES_ENGINE,Deterministic Rule Matched,ESCALATE,,Max retry limit reached (3 attempts). Halting to prevent gateway fees.,N/A
+txn_1016,226.6,RULES_ENGINE,Deterministic Rule Matched,BLOCK_ACCOUNT,,Terminal failure code 'suspected_fraud' cannot be resolved via retry.,N/A
+txn_1017,429.13,RULES_ENGINE,Deterministic Rule Matched,PAUSE_WORKFLOW,,Active promise-to-pay on file for 2026-08-31. Suppressing retries to respect arrangement.,N/A
+txn_1018,280.37,RULES_ENGINE,Deterministic Rule Matched,RETRY_IMMEDIATE,,Transient network error. Safe to retry immediately.,RECOVERED
+txn_1019,331.08,RULES_ENGINE,Deterministic Rule Matched,RETRY_IMMEDIATE,,Transient network error. Safe to retry immediately.,FAILED
+txn_1020,23.4,RULES_ENGINE,Deterministic Rule Matched,ESCALATE_TO_COLLECTIONS,,Customer lapsed on promise-to-pay date (2026-08-28). Automatic escalation triggered.,N/A
+txn_1021,94.79,RULES_ENGINE,Deterministic Rule Matched,ESCALATE,,Max retry limit reached (3 attempts). Halting to prevent gateway fees.,N/A
+txn_1022,325.06,RULES_ENGINE,Deterministic Rule Matched,MANUAL_REVIEW,,Missing critical customer metadata required for dunning strategy.,N/A
+txn_1023,25.35,RULES_ENGINE,Deterministic Rule Matched,MANUAL_REVIEW,,Missing critical customer metadata required for dunning strategy.,N/A
+txn_1024,437.94,RULES_ENGINE,Deterministic Rule Matched,ESCALATE,,Max retry limit reached (3 attempts). Halting to prevent gateway fees.,N/A
+txn_1025,385.71,RULES_ENGINE,Deterministic Rule Matched,PAUSE_WORKFLOW,,Active promise-to-pay on file for 2026-09-01. Suppressing retries to respect arrangement.,N/A
+txn_1026,26.32,LLM_AGENT,Failed to parse LLM output,AGENT_FAILURE,0.0,"Agent execution failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}",FAILED
+txn_1027,21.6,RULES_ENGINE,Deterministic Rule Matched,ESCALATE,,Max retry limit reached (7 attempts). Halting to prevent gateway fees.,N/A
+txn_1028,106.21,RULES_ENGINE,Deterministic Rule Matched,PAUSE_WORKFLOW,,Active promise-to-pay on file for 2026-09-01. Suppressing retries to respect arrangement.,N/A
+txn_1029,183.63,RULES_ENGINE,Deterministic Rule Matched,PAUSE_WORKFLOW,,Active promise-to-pay on file for 2026-08-31. Suppressing retries to respect arrangement.,N/A
+txn_1030,181.2,RULES_ENGINE,Deterministic Rule Matched,ESCALATE,,Max retry limit reached (3 attempts). Halting to prevent gateway fees.,N/A
+txn_1031,135.73,RULES_ENGINE,Deterministic Rule Matched,ESCALATE,,Max retry limit reached (3 attempts). Halting to prevent gateway fees.,N/A
+txn_1032,358.11,RULES_ENGINE,Deterministic Rule Matched,PAUSE_WORKFLOW,,Active promise-to-pay on file for 2026-08-31. Suppressing retries to respect arrangement.,N/A
+txn_1033,300.19,RULES_ENGINE,Deterministic Rule Matched,PAUSE_WORKFLOW,,Active promise-to-pay on file for 2026-09-01. Suppressing retries to respect arrangement.,N/A
+txn_1034,400.36,RULES_ENGINE,Deterministic Rule Matched,BLOCK_ACCOUNT,,Terminal failure code 'suspected_fraud' cannot be resolved via retry.,N/A
+txn_1035,497.36,RULES_ENGINE,Deterministic Rule Matched,MANUAL_REVIEW,,Missing critical customer metadata required for dunning strategy.,N/A
+txn_1036,155.03,RULES_ENGINE,Deterministic Rule Matched,BLOCK_ACCOUNT,,Terminal failure code 'suspected_fraud' cannot be resolved via retry.,N/A
+txn_1037,422.05,RULES_ENGINE,Deterministic Rule Matched,RETRY_IMMEDIATE,,Transient network error. Safe to retry immediately.,RECOVERED
+txn_1038,177.87,RULES_ENGINE,Deterministic Rule Matched,NOTIFY_CUSTOMER,,Terminal failure code 'expired_card' cannot be resolved via retry.,N/A
+txn_1039,117.28,RULES_ENGINE,Deterministic Rule Matched,ESCALATE,,Max retry limit reached (3 attempts). Halting to prevent gateway fees.,N/A
+txn_1040,188.27,RULES_ENGINE,Deterministic Rule Matched,ESCALATE,,Max retry limit reached (3 attempts). Halting to prevent gateway fees.,N/A
+txn_1041,61.3,RULES_ENGINE,Deterministic Rule Matched,BLOCK_ACCOUNT,,Terminal failure code 'suspected_fraud' cannot be resolved via retry.,N/A
+txn_1042,420.97,RULES_ENGINE,Deterministic Rule Matched,RETRY_IMMEDIATE,,Transient network error. Safe to retry immediately.,RECOVERED
+txn_1043,74.55,RULES_ENGINE,Deterministic Rule Matched,ESCALATE,,Max retry limit reached (3 attempts). Halting to prevent gateway fees.,N/A
+txn_1044,429.99,RULES_ENGINE,Deterministic Rule Matched,RETRY_IMMEDIATE,,Transient network error. Safe to retry immediately.,RECOVERED
+txn_1045,387.88,RULES_ENGINE,Deterministic Rule Matched,ESCALATE,,Max retry limit reached (7 attempts). Halting to prevent gateway fees.,N/A
+txn_1046,384.59,RULES_ENGINE,Deterministic Rule Matched,ESCALATE_TO_COLLECTIONS,,Customer lapsed on promise-to-pay date (2026-08-29). Automatic escalation triggered.,N/A
+txn_1047,117.52,LLM_AGENT,Failed to parse LLM output,AGENT_FAILURE,0.0,"Agent execution failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}",FAILED
+txn_1047,272.79,RULES_ENGINE,Deterministic Rule Matched,QUARANTINE_DATA,,Duplicate transaction detected (txn_1047). Quarantined to prevent MRR double-counting.,N/A
+txn_1049,380.12,RULES_ENGINE,Deterministic Rule Matched,ESCALATE,,Max retry limit reached (3 attempts). Halting to prevent gateway fees.,N/A
+txn_1050,103.67,RULES_ENGINE,Deterministic Rule Matched,ESCALATE,,Max retry limit reached (3 attempts). Halting to prevent gateway fees.,N/A
+txn_1051,315.3,RULES_ENGINE,Deterministic Rule Matched,RETRY_IMMEDIATE,,Transient network error. Safe to retry immediately.,RECOVERED
+txn_1052,36.94,RULES_ENGINE,Deterministic Rule Matched,ESCALATE_TO_COLLECTIONS,,Customer lapsed on promise-to-pay date (2026-08-28). Automatic escalation triggered.,N/A
+txn_1053,257.7,RULES_ENGINE,Deterministic Rule Matched,BLOCK_ACCOUNT,,Terminal failure code 'suspected_fraud' cannot be resolved via retry.,N/A
+txn_1054,313.27,LLM_AGENT,Failed to parse LLM output,AGENT_FAILURE,0.0,"Agent execution failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}",FAILED
+txn_1055,178.66,RULES_ENGINE,Deterministic Rule Matched,BLOCK_ACCOUNT,,Terminal failure code 'suspected_fraud' cannot be resolved via retry.,N/A
+txn_1056,119.69,RULES_ENGINE,Deterministic Rule Matched,MANUAL_REVIEW,,Missing critical customer metadata required for dunning strategy.,N/A
+txn_1057,109.61,RULES_ENGINE,Deterministic Rule Matched,ESCALATE,,Max retry limit reached (3 attempts). Halting to prevent gateway fees.,N/A
+txn_1058,469.61,RULES_ENGINE,Deterministic Rule Matched,PAUSE_WORKFLOW,,Active promise-to-pay on file for 2026-09-01. Suppressing retries to respect arrangement.,N/A
+txn_1059,351.64,RULES_ENGINE,Deterministic Rule Matched,ESCALATE,,Max retry limit reached (5 attempts). Halting to prevent gateway fees.,N/A
+txn_1060,388.87,RULES_ENGINE,Deterministic Rule Matched,BLOCK_ACCOUNT,,Terminal failure code 'suspected_fraud' cannot be resolved via retry.,N/A
+txn_1061,94.04,RULES_ENGINE,Deterministic Rule Matched,ESCALATE,,Max retry limit reached (3 attempts). Halting to prevent gateway fees.,N/A
+txn_1062,253.45,RULES_ENGINE,Deterministic Rule Matched,ESCALATE,,Max retry limit reached (3 attempts). Halting to prevent gateway fees.,N/A
+txn_1063,16.12,RULES_ENGINE,Deterministic Rule Matched,BLOCK_ACCOUNT,,Terminal failure code 'suspected_fraud' cannot be resolved via retry.,N/A
+txn_1064,111.44,RULES_ENGINE,Deterministic Rule Matched,ESCALATE,,Max retry limit reached (5 attempts). Halting to prevent gateway fees.,N/A
+txn_1064,378.91,RULES_ENGINE,Deterministic Rule Matched,QUARANTINE_DATA,,Duplicate transaction detected (txn_1064). Quarantined to prevent MRR double-counting.,N/A
+txn_1066,163.18,RULES_ENGINE,Deterministic Rule Matched,MANUAL_REVIEW,,Missing critical customer metadata required for dunning strategy.,N/A
+txn_1067,423.61,RULES_ENGINE,Deterministic Rule Matched,MANUAL_REVIEW,,Missing critical customer metadata required for dunning strategy.,N/A
+txn_1068,221.0,RULES_ENGINE,Deterministic Rule Matched,ESCALATE,,Max retry limit reached (3 attempts). Halting to prevent gateway fees.,N/A
+txn_1069,175.16,LLM_AGENT,Failed to parse LLM output,AGENT_FAILURE,0.0,"Agent execution failed: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_KEY_INVALID', 'domain': 'googleapis.com', 'metadata': {'service': 'generativelanguage.googleapis.com'}}, {'@type': 'type.googleapis.com/google.rpc.LocalizedMessage', 'locale': 'en-US', 'message': 'API key not valid. Please pass a valid API key.'}]}}",FAILED
+txn_1070,445.64,RULES_ENGINE,Deterministic Rule Matched,ESCALATE_TO_COLLECTIONS,,Customer lapsed on promise-to-pay date (2026-08-29). Automatic escalation triggered.,N/A
+txn_1071,404.01,RULES_ENGINE,Deterministic Rule Matched,PAUSE_WORKFLOW,,Active promise-to-pay on file for 2026-09-01. Suppressing retries to respect arrangement.,N/A
+txn_1072,95.78,RULES_ENGINE,Deterministic Rule Matched,NOTIFY_CUSTOMER,,Terminal failure code 'expired_card' cannot be resolved via retry.,N/A
+txn_1073,77.04,RULES_ENGINE,Deterministic Rule Matched,ESCALATE_TO_COLLECTIONS,,Customer lapsed on promise-to-pay date (2026-08-29). Automatic escalation triggered.,N/A
+txn_1074,349.11,RULES_ENGINE,Deterministic Rule Matched,ESCALATE,,Max retry limit reached (3 attempts). Halting to prevent gateway fees.,N/A

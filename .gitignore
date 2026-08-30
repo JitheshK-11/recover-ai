@@ -1,0 +1,14 @@
+# Environment variables (Critical for keeping your API key safe)
+.env
+
+# Python bytecode and cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Streamlit local configuration cache
+.streamlit/
+
+# OS specific temporary files
+.DS_Store
+Thumbs.db
