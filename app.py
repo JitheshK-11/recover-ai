@@ -13,6 +13,7 @@ st.set_page_config(page_title="Revenue Recovery AI", page_icon="💸", layout="w
 st.title("💸 Revenue Recovery Agent Dashboard")
 st.markdown("### Intelligent Orchestration & Deterministic Safety Rails")
 
+@st.cache_data
 def load_data():
     try:
         audit_df = pd.read_csv("audit_trail.csv")
@@ -40,7 +41,12 @@ else:
     col1, col2, col3, col4 = st.columns(4)
     
     mrr_paused = audit_df[audit_df["action"] == "PAUSE_WORKFLOW"]["mrr_value"].sum()
-    mrr_pending = audit_df[audit_df["action"].isin(["NOTIFY_CUSTOMER", "MANUAL_REVIEW"])]["mrr_value"].sum()
+    
+    # FIX applied here: Only count rule-based notifications/reviews, not AI-simulated outreach
+    mrr_pending = audit_df[
+        (audit_df["action"].isin(["NOTIFY_CUSTOMER", "MANUAL_REVIEW"])) & 
+        (audit_df["handler"] == "RULES_ENGINE")
+    ]["mrr_value"].sum()
     
     col1.metric(label="Total MRR Processed", value=f"${total_mrr:,.2f}")
     col2.metric(label="✅ Actual MRR Recovered", value=f"${mrr_actually_recovered:,.2f}")
