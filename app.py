@@ -13,7 +13,6 @@ st.set_page_config(page_title="Revenue Recovery AI", page_icon="💸", layout="w
 st.title("💸 Revenue Recovery Agent Dashboard")
 st.markdown("### Intelligent Orchestration & Deterministic Safety Rails")
 
-@st.cache_data
 def load_data():
     try:
         audit_df = pd.read_csv("audit_trail.csv")

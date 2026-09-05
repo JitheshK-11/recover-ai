@@ -2,7 +2,6 @@ import json
 import csv
 import random
 
-from sklearn import metrics
 from router import deterministic_router
 from agent import process_with_agent
 
@@ -43,7 +42,7 @@ def run_recovery_pipeline(input_file="workflow_payments.json"):
             else:
                 mrr = 0.0  # --- FIX: Normalize negative numbers to 0.0 ---
         except (ValueError, TypeError):
-            mrr = 0.0 # Count as 0 if it's
+            mrr = 0.0 # Count as 0 if it's a malformed string like "USD 299" to prevent crashes.
         router_result = deterministic_router(txn, current_date_str="2026-08-30", seen_txn_ids=seen_txn_ids)
         actual_outcome = "N/A" 
         
